@@ -1,34 +1,40 @@
-html, body {
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url("/image/4ppl.png");
+  background-size: 100% auto;
 }
-.body{
-  font-family: Georgia;
-}
-.ticket_info{
+.ticket-info {
   color: #06363D;
-  font-family: Georgia;
+  font-size: 20px;
+  display: block;
+  padding-top: 10px;
+  text-decoration: none;
 }
-.title{
+.title {
   color: #E94C64;
   margin: 0px;
   font-size: 40px;
 }
-.container{
-  background-color: #EFC84C;
+.all-tickets-container {
+  background-color: #EEC83D;
   text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
-.buttons{
+.page-buttons {
   justify-content: center;
   display: flex;
   flex-direction: row;
   margin: 0px;
   background-color: #79A11D;
-  position: fixed;
-  bottom: 0;
+  margin-left:40%;
+  margin-right:40%; 
+  border-radius: 5px;
 }
-.btn{
+.each-page-btn {
   height: 40px;
   width: 40px;
   border-style: none;
@@ -36,9 +42,8 @@ html, body {
   color: black;
   background-color: #79A11D;
   margin: 0px;
-  font-family: Georgia;
 }
-.btn:hover {
+.each-page-btn:hover {
   background-color: #E94C64; 
   color: #06363D;
   border-color:none;
@@ -48,4 +53,147 @@ html, body {
   cursor: pointer;
   outline: inherit;
   font-size: 23px;
+}
+.single-ticket-subject {
+  color: #06363D;
+  font-size: 25px;
+  background-color:rgb(250, 223, 200);
+  border-radius: 5px;
+  margin: 10px 20px 10px 20px;
+}
+.single-ticket-description {
+  font-size: 20px;
+  color: #06363D;
+  background-color:rgb(250, 223, 200);
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right:20px;
+}
+.single-ticket-status {
+  font-size: 20px;
+  color: #06363D;
+  background-color:rgb(250, 223, 200);
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 150px;
+}
+.single-ticket-id {
+  background-color:rgb(250, 223, 200);
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.single-ticket-dates {
+  background-color:rgb(250, 223, 200);
+  border-radius: 5px;
+  height: 100px;
+  width: 300px;
+}
+.home-container {
+  color:#09363D;
+  text-align: center;
+  margin-left: 30%;
+  margin-right:30%;
+  margin-top: 20%;
+}
+.single-ticket-container {
+  background-color:#F38D39;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 25%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+.single-ticket-extra-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.single-ticket-btn {
+  background-color: #39AABC;
+  border: none;
+  height: 50px;
+  width: 150px;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.single-ticket-btn:hover {
+  background-color:	#248A94;
+}
+.home-here-btn {
+  text-decoration: none;
+}
+@media screen and (max-width:700px) {
+  .all-tickets-container {
+    width: 100%;
+    margin: 0;
+  }
+  .single-ticket-container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 30%;
+  }
+  .single-ticket-subject {
+    color: #06363D;
+    font-size: 20px;
+  }
+  .single-ticket-description {
+    font-size: 15px;
+    color: #06363D;
+  }
+  .single-ticket-status {
+    font-size: 15px;
+    color: #06363D;
+  }
+  .ticket_info {
+    font-size: 15px;
+  }
+}
+.logo {
+  margin-top: 20px;
+  border-radius: 5px;
+}
+a:hover {
+  text-decoration: underline;
+}
+.contact-details {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+}
+.email-link {
+  text-decoration: none;
+}
+a {
+  color:#E94C64;
+}
+.email-address {
+  display: inline;
+  margin-right:20px;
+}
+.email-link {
+  background-color:white;
+  border: 2px solid #39AABC;
+  color: #39AABC;
+}
+a.email-link:hover {
+  background-color: #39AABC;
+  color:white;
+}
+.home-button {
+  text-decoration: none;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin-left:40%;
+  margin-right:40%; 
+  color:#06363D;
 }

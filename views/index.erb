@@ -1,30 +1,32 @@
-<div class="container">
+<div class="all-tickets-container">
   <h1 class="title">Ticket Viewer</h1>
-  <div class="ticket_info">
+  <div>
     <% @tickets.each do |ticket| %>
-    <p><%= ticket["subject"] %></p>
+    <div><a class="ticket-info" href="/api/<%= ticket["id"]%>"><%= ticket["id"] %>. <%= ticket["subject"] %></a></div>
     <%end%>
   </div>
 </div>
-<div class="buttons">
+
+<div class="page-buttons">
   <form action="/api">
     <input name="page"value=1 type="hidden">
-    <button class="btn">1</button>
+    <button class="each-page-btn">1</button>
   </form>
   <form action="/api">
     <input name="page"value=2 type="hidden">
-    <button class="btn">2</button>
+    <button class="each-page-btn">2</button>
   </form> 
   <form action="/api">
     <input name="page"value=3 type="hidden">
-    <button class="btn">3</button>
+    <button class="each-page-btn">3</button>
   </form>
   <form action="/api">
     <input name="page"value=4 type="hidden">
-    <button class="btn">4</button>
+    <button class="each-page-btn">4</button>
   </form>
   <form action="/api">
     <input name="page"value=5 type="hidden">
-    <button class="btn">5</button>
+    <button class="each-page-btn">5</button>
   </form>
 </div>
+<a class="home-button"href="/">Home</a>

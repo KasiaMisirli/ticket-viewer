@@ -1,0 +1,26 @@
+<div class="single-ticket-container">
+  <img class="logo" src="/image/logo.png" alt="logo">
+  <p class="single-ticket-subject">Subject: <%= @single["subject"]%></p>
+  <p class="single-ticket-description">Description: <%= @single["description"]%></p>
+  <div class="single-ticket-extra-info">
+    <div>
+      <p class="single-ticket-status">Status: <%= @single["status"]%></p>
+      <p class="single-ticket-id" >Id: <%= @single["id"]%></p>
+    </div>
+    <div class="single-ticket-dates">
+      <p>Created at: <%= @single["created_at"]%></p>
+      <p>Udpated at: <%= @single["updated_at"]%></p>
+    </div>
+  </div>
+  <form action="/api">
+    <input type="hidden">
+    <button class="single-ticket-btn">Menu</button>
+  </form>
+</div>
+<a class="home-button" href="/">Home</a>
+
+<style>
+  body{
+  background-image: url("/image/1.png")
+}
+</style>
