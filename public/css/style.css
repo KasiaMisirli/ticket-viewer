@@ -197,3 +197,17 @@ a.email-link:hover {
   margin-right:40%; 
   color:#06363D;
 }
+.error-container {
+  text-align: center;
+  background-color: white;
+}
+.error-title {
+  color: white;
+}
+.api-unavailable {
+  text-align: center;
+  background-color: white;
+}
+.page-summary {
+  text-align: center;
+}

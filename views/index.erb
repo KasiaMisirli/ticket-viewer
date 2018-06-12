@@ -30,3 +30,12 @@
   </form>
 </div>
 <a class="home-button"href="/">Home</a>
+
+<p class="page-summary">viewing <%=((@page-1)*25)+1%> to <%=[(@page*25),@alltickets].min%> tickets, <br/> of <%= @alltickets%> tickets total</p>
+
+<style>
+.page-summary {
+  text-align: center;
+  color: white;
+}
+</style>
