@@ -5,22 +5,25 @@
   <div class="single-ticket-extra-info">
     <div>
       <p class="single-ticket-status">Status: <%= @single["status"]%></p>
-      <p class="single-ticket-id" >Id: <%= @single["id"]%></p>
+      <p class="single-ticket-id">Id: <%= @single["id"]%></p>
     </div>
     <div class="single-ticket-dates">
       <p>Created at: <%= @single["created_at"]%></p>
       <p>Udpated at: <%= @single["updated_at"]%></p>
     </div>
   </div>
-  <form action="/api">
-    <input type="hidden">
-    <button class="single-ticket-btn">Menu</button>
-  </form>
+<%page=(@single["id"]/25.to_f).ceil%>
+<a class="single-ticket-goback-btn" href="/api?page=<%=page%>">Go Back</a> 
 </div>
-<%# <a class="home-button" href="/api/<%= @%>">Home</a> %>
 
 <style>
   body{
   background-image: url("/image/1.png")
+}
+@media screen and (max-width:700px){
+  body {
+    background-image: none;
+    background-color: lightgrey;
+  }
 }
 </style>

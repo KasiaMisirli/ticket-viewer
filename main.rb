@@ -12,13 +12,17 @@ get '/api' do
   auth = {:username => "kasiazendesk@gmail.com", :password => "zendesk2012"}
   result = HTTParty.get(url,:basic_auth => auth)
   @tickets = result.parsed_response["tickets"]
+  if @tickets
   @page = (params[:page].to_i)
   @alltickets = result["count"]
   erb (:index)
+  else
+    erb (:unavailable)
+  end
 end
 
 get '/api/:id' do
-  url="https://kasiatest.zendesk.com/api/v2/tickets/#{params[:id]}.json"
+  url = "https://kasiatest.zendesk.com/api/v2/tickets/#{params[:id]}.json"
   auth = {:username => "kasiazendesk@gmail.com", :password => "zendesk2012"}
   result = HTTParty.get(url,:basic_auth => auth)
   @single = result.parsed_response["ticket"]

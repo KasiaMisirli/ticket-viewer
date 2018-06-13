@@ -113,47 +113,21 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
-.single-ticket-btn {
+.single-ticket-goback-btn {
   background-color: #39AABC;
-  border: none;
+  border: 1px solid #39AABC;
+  text-decoration: none;
   height: 50px;
   width: 150px;
   color: white;
   margin-bottom: 20px;
   font-size: 20px;
 }
-.single-ticket-btn:hover {
+.single-ticket-goback-btn:hover {
   background-color:	#248A94;
 }
 .home-here-btn {
   text-decoration: none;
-}
-@media screen and (max-width:700px) {
-  .all-tickets-container {
-    width: 100%;
-    margin: 0;
-  }
-  .single-ticket-container {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 30%;
-  }
-  .single-ticket-subject {
-    color: #06363D;
-    font-size: 20px;
-  }
-  .single-ticket-description {
-    font-size: 15px;
-    color: #06363D;
-  }
-  .single-ticket-status {
-    font-size: 15px;
-    color: #06363D;
-  }
-  .ticket_info {
-    font-size: 15px;
-  }
 }
 .logo {
   margin-top: 20px;
@@ -210,4 +184,68 @@ a.email-link:hover {
 }
 .page-summary {
   text-align: center;
+  color: white;
+}
+.error-container {
+  text-align: center;
+  color: darkgrey;
+  
+}
+.error-home-link {
+  color: #06363D;
+}
+.api-unavailable-container {
+  text-align: center;
+  color: black;
+  margin: 30%;
+  background-color:lightgrey;
+  border-radius: 5px; 
+}
+@media screen and (max-width:700px) {
+  .api-unavailable-container{
+    margin: 30% 0 20% 0;
+  }
+  .page-summary {
+    color: black;
+  }
+  .home-button {
+    background-color: #39AABC;
+    border-radius: 0;
+  }
+  .home-container {
+    background-color: lightgrey;
+    margin: 40% 20% 20% 20%;
+    background-repeat: no-repeat;
+  }
+  .single-ticket-container {
+    margin-top: 5%;
+  }
+  body {
+    background-image: none;
+  }
+  .all-tickets-container {
+    width: 100%;
+    margin: 0;
+  }
+  .single-ticket-container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 30%;
+  }
+  .single-ticket-subject {
+    color: #06363D;
+    font-size: 20px;
+  }
+  .single-ticket-description {
+    font-size: 15px;
+    color: #06363D;
+  }
+  .single-ticket-status {
+    font-size: 15px;
+    color: #06363D;
+  }
+  .ticket_info {
+    font-size: 15px;
+  }
 }

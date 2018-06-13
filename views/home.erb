@@ -1,7 +1,7 @@
 <div class="home-container">
   <h1>Zendesk Ticket Viewer</h1><p>by Kasia Misirli</p>
   <h3>Hope you will enjoy exploring the ticket viewer</h3>
-  <h3>Click <a class="home-here-btn" href="/api">here</a> when you are ready</h3>
+  <h3>Click <a class="home-here-btn" href="/api?page=1">here</a> when you are ready</h3>
 </div>
 <footer class="contact-details">
   <h3 class="email-address">kasia.misirli@gmail.com</h3>
@@ -9,6 +9,17 @@
 </footer>
 <style>
 body {
-  background-image: url("/image/1.png")
+  background-image: url("/image/1person.png");
+  background-repeat: no-repeat;
+  background-color: #F4F0ED;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width:700px){
+  body {
+  background-image: none;
+  background-color: lightgrey;
+  }
 }
 </style>

@@ -1,41 +1,33 @@
 <div class="all-tickets-container">
   <h1 class="title">Ticket Viewer</h1>
   <div>
-    <% @tickets.each do |ticket| %>
-    <div><a class="ticket-info" href="/api/<%= ticket["id"]%>"><%= ticket["id"] %>. <%= ticket["subject"] %></a></div>
-    <%end%>
+      <% @tickets.each do |ticket| %>
+      <div><a class="ticket-info" href="/api/<%= ticket["id"]%>"><%= ticket["id"] %>. <%= ticket["subject"] %></a></div>
+      <%end%>
   </div>
 </div>
-
 <div class="page-buttons">
   <form action="/api">
-    <input name="page"value=1 type="hidden">
+    <input name="page" value=1 type="hidden">
     <button class="each-page-btn">1</button>
   </form>
   <form action="/api">
-    <input name="page"value=2 type="hidden">
+    <input name="page" value=2 type="hidden">
     <button class="each-page-btn">2</button>
   </form> 
   <form action="/api">
-    <input name="page"value=3 type="hidden">
+    <input name="page" value=3 type="hidden">
     <button class="each-page-btn">3</button>
   </form>
   <form action="/api">
-    <input name="page"value=4 type="hidden">
+    <input name="page" value=4 type="hidden">
     <button class="each-page-btn">4</button>
   </form>
   <form action="/api">
-    <input name="page"value=5 type="hidden">
+    <input name="page" value=5 type="hidden">
     <button class="each-page-btn">5</button>
   </form>
 </div>
-<a class="home-button"href="/">Home</a>
+<a class="home-button" href="/">Home</a>
 
-<p class="page-summary">viewing <%=((@page-1)*25)+1%> to <%=[(@page*25),@alltickets].min%> tickets, <br/> of <%= @alltickets%> tickets total</p>
-
-<style>
-.page-summary {
-  text-align: center;
-  color: white;
-}
-</style>
+<p class="page-summary">viewing <%=((@page-1)*25)+1%> to <%=[(@page*25),@alltickets].min%> tickets, <br/> of <%=@alltickets%> tickets total</p>
