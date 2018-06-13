@@ -2,7 +2,15 @@ GEM
   remote: https://rubygems.org/
   specs:
     ZenTest (4.11.1)
+    coderay (1.1.2)
+    httparty (0.16.2)
+      multi_xml (>= 0.5.2)
+    method_source (0.9.0)
+    multi_xml (0.6.0)
     mustermann (1.0.2)
+    pry (0.11.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
     rack (2.0.5)
     rack-protection (2.0.3)
       rack
@@ -18,6 +26,9 @@ PLATFORMS
 
 DEPENDENCIES
   ZenTest
+  bundler
+  httparty
+  pry
   sinatra
 
 BUNDLED WITH

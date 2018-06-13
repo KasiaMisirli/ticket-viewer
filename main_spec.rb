@@ -1,5 +1,6 @@
 require File.dirname(__FILE__) + '/main.rb'
 require 'rack/test'
+require 'rspec'
 
 # set :environment, :test
 
