@@ -18,7 +18,7 @@ body {
 .all-tickets-container {
   background-color: #EEC83D;
   text-align: center;
-  margin: 5% 15% 5% 15%; 
+  margin: 5% 20% 5% 20%; 
   border-radius: 10px;
   padding-bottom: 20px;
 }
@@ -226,6 +226,7 @@ a.email-link:hover {
     margin-top: 5%;
   }
   .all-tickets-container {
+    margin: 5% 20% 5% 20%; 
     width: 100%;
     margin: 0;
   }
