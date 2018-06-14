@@ -1,23 +1,23 @@
 # Zendesk Ticket Viewer
 
-Accesing Zendesk API and display all tickets available.
+Accessing Zendesk API and display all tickets available.
 Please click [here](https://zendesk-ticket-viewer.herokuapp.com) to view the app on heroku.
 
 ## Installation
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### 1. Clone the repository to your local machine
+### 1. Clone the repository to your local machine:
 ```
 git clone https://zendesk-ticket-viewer.herokuapp.com
 ```
-### 2. Start local host server
+### 2. Start local host server:
 
 While inside the working directory:
 ```
 ruby main.rb
 ```
-After starting the server, you need to check what chanel is the app available on
+After starting the server, you need to check what channel is the app available on
 eg. Listening on localhost:4567
 In above situation, you must type into your url below: http://localhost:4567/
 
@@ -28,15 +28,15 @@ To run this app, you will require below gems:
 ```
 gem install sinatra
 ```
-* [Ruby](https://www.ruby-lang.org/en/downloads/) - Programming language
+* [Ruby](https://www.ruby-lang.org/en/downloads/)-Programming language
 ```
 brew install ruby
 ```
-* [HTTParty](https://rubygems.org/gems/httparty/versions/0.13.7)
+* [HTTParty](https://rubygems.org/gems/httparty/versions/0.13.7)-Access API
 ```
 gem install httparty
 ```
-* [rspec](https://rubygems.org/gems/rspec/versions/3.4.0)- Testing
+* [rspec](https://rubygems.org/gems/rspec/versions/3.4.0)-Testing
 ```
 gem install rspec -v 3.4.0
 ```
@@ -51,7 +51,7 @@ Note: {id} will be integer that is the id number of the ticket that you have sel
 By now, you should see a single ticket with additional info.
 To go back to the same page that you were on, simply click "Go Back" button.
 
-At this stage, my app doesnt take your credentials to access the API. The credentials are being given in the code so tickets that are being displayed are my API tickets.
+At this stage, my app doesn't take your credentials to access the API. The credentials are being given in the code so tickets that are being displayed are my API tickets.
 If you want to create your own API, please sign up on the [zendesk website](https://www.zendesk.com/) for a free trial and follow the instructions on how to upload tickets and access them later.
 Hint:
 Below is the code that you need to use to access the API:
@@ -83,7 +83,7 @@ Before the following steps, please ensure this app already has a github reposito
 ```
 heroku login
 ```
-The request for your email and password will appear. If you dont have an account with heroku, please click on this [link](https://signup.heroku.com/) to create an account.
+The request for your email and password will appear. If you don't have an account with heroku, please click on this [link](https://signup.heroku.com/) to create an account.
 ```
 heroku create
 ```
@@ -91,7 +91,7 @@ Will create the app.
 ```
 git remote -v
 ```
-Above command isnt necessary, but its useful to see if the heroku app is inside your github repository.
+Above command is not necessary, but it's useful to see if the heroku app is inside your github repository.
 ```
 git push heroku master
 ```
@@ -105,13 +105,13 @@ Often, heroku will display error in the browser and then you have to use followi
 ```
 heroku logs
 ```
-You will probably notice that url that heroku gave you is very random and you would probably want to change the url. Please use the below command to achive that.
+You will probably notice that url that heroku gave you is very random and you would probably want to change the url. Please use the below command to achieve that.
 ```
 heroku apps:rename newname --app oldname
 ```
-newname -> is the new name you want to give to your app, please use highfen between words
+newname -> is the new name you want to give to your app, please use hyphen between words
 oldname -> is the random name heroku gave you
-Please make sure you spell the oldname correctly, otherwise the command wont work.
+Please make sure you spell the oldname correctly, otherwise the command won't work.
 
 ## Built With
 
@@ -122,6 +122,7 @@ Please make sure you spell the oldname correctly, otherwise the command wont wor
 ## Author
 
 * **Kasia Misirli** 
+
 
 
 
