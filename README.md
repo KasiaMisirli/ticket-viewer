@@ -36,7 +36,7 @@ brew install ruby
 ```
 gem install httparty
 ```
-* [rspec](https://rubygems.org/gems/rspec/versions/3.4.0)-Testing
+* [RSPEC](https://rubygems.org/gems/rspec/versions/3.4.0)-Testing
 ```
 gem install rspec -v 3.4.0
 ```
