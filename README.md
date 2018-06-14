@@ -60,7 +60,7 @@ Below is the code that you need to use to access the API:
   auth = {:username => "kasiazendesk@gmail.com", :password => "zendesk2012"}
   result = HTTParty.get(url,:basic_auth => auth)
 ```
-Please keep in mind, this isn't enough to access the API, you will need to run authentication command in terminal, please see [zendesk developer](https://developer.zendesk.com/rest_api/docs/core/tickets) pages for further details.
+Please keep in mind, this isn't enough to access the API, you will need to run authentication command in terminal, please see [zendesk developers](https://developer.zendesk.com/rest_api/docs/core/tickets) pages for further details.
 
 ## Running the tests
 
