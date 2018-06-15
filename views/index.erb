@@ -7,26 +7,18 @@
   </div>
 </div>
 <div class="page-buttons">
+<% @pagenr = (@alltickets.to_f/25).ceil%>
+<% i = 0 %>
+<% loop do %>
+  <% nr = i += 1 %>
   <form action="/api">
-    <input name="page" value=1 type="hidden">
-    <button class="each-page-btn">1</button>
-  </form>
-  <form action="/api">
-    <input name="page" value=2 type="hidden">
-    <button class="each-page-btn">2</button>
+    <input name="page" value='<%= nr %>' type="hidden">
+    <button class="each-page-btn"><%= nr %></button>
   </form> 
-  <form action="/api">
-    <input name="page" value=3 type="hidden">
-    <button class="each-page-btn">3</button>
-  </form>
-  <form action="/api">
-    <input name="page" value=4 type="hidden">
-    <button class="each-page-btn">4</button>
-  </form>
-  <form action="/api">
-    <input name="page" value=5 type="hidden">
-    <button class="each-page-btn">5</button>
-  </form>
+  <% if i == @pagenr %>
+    <% break %>
+    <% end %>
+<% end %>
 </div>
 <a class="home-button" href="/">Home</a>
 

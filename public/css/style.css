@@ -186,7 +186,8 @@ a.email-link:hover {
 }
 .page-summary {
   text-align: center;
-  color: white;
+  color: black;
+  background-color: #F38D39;
 }
 .error-container {
   text-align: center;
@@ -212,6 +213,7 @@ a.email-link:hover {
   }
   .page-summary {
     color: black;
+   
   }
   .home-button {
     background-color: #39AABC;
