@@ -9,7 +9,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### 1. Clone the repository to your local machine:
 ```
-git clone https://zendesk-ticket-viewer.herokuapp.com
+git clone https://github.com/KasiaMisirli/ticket-viewer.git
 ```
 ### 2. Start local host server:
 
