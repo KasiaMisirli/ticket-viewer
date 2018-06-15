@@ -1,6 +1,6 @@
 # Zendesk Ticket Viewer
 
-Accessing Zendesk API and display all tickets available.
+This is a ticket viewer app that will let you access the Zendesk API and display all tickets available.
 Please click [here](https://zendesk-ticket-viewer.herokuapp.com) to view the app on heroku.
 
 ## Installation
@@ -13,13 +13,13 @@ git clone https://github.com/KasiaMisirli/ticket-viewer.git
 ```
 ### 2. Start local host server:
 
-While inside the working directory:
+While inside the ticket-viewer working directory:
 ```
 ruby main.rb
 ```
-After starting the server, you need to check what channel is the app available on
+After starting the server, you need to check what port is the app available on
 eg. Listening on localhost:4567
-In above situation, you must type into your url below: http://localhost:4567/
+In above situation, you must type the following url in your browser: http://localhost:4567/
 
 ## Prerequisites(OS X)
 
@@ -43,11 +43,11 @@ gem install rspec -v 3.4.0
 
 ## Usage Instructions
 
-To start, follow the instructions above, start your server and type into url: http://localhost:4567/
-First page will be displayed('/'). Please follow the instructions on that page.
+To start, follow the instructions above, start your server and type into url: http://localhost:4567
+First page will be displayed ('/'). Please follow the instructions on that page.
 After clicking the link, the app will take you to ('/api?page=1'). You can click on any of the tickets which will take you to ('/api/{id}')
 
-Note: {id} will be integer that is the id number of the ticket that you have selected.
+Note: {id} will be an integer that is the id number of the ticket that you have selected.
 By now, you should see a single ticket with additional info.
 To go back to the same page that you were on, simply click "Go Back" button.
 
@@ -64,7 +64,7 @@ Please keep in mind, this isn't enough to access the API, you will need to run a
 
 ## Running the tests
 
-To run the tests, ensure you are inside the app directory and type in terminal:
+To run the tests, ensure you are inside the ticket-viewer directory and type in terminal:
 ```
 rspec main_spec.rb
 ```
@@ -75,10 +75,12 @@ This command should return:
 Finished in 0.77485 seconds (files took 0.35165 seconds to load)
 4 examples, 0 failures
 ```
+In case of any error messages, please lodge an issue on Github and I will look into it.
+
 ## Deployment
 
 You will need the following commands to deploy this app to heroku:
-Please make sure that you are in a working directory!
+Please make sure that you are in the ticket-viewer directory!
 Before the following steps, please ensure this app already has a github repository and the working directory is clean (meaning: you have pushed up all the changes to github)
 ```
 heroku login
@@ -92,6 +94,12 @@ Will create the app.
 git remote -v
 ```
 Above command is not necessary, but it's useful to see if the heroku app is inside your github repository.
+You should be able to see something like below:
+heroku    https://git.heroku.com/morning-depths-90039.git (fetch)
+heroku    https://git.heroku.com/morning-depths-90039.git (push)
+origin    https://github.com/yourgithubname/yourgithubrepositoryname.git (fetch)
+origin    https://github.com/yourgithubname/yourgithubrepositoryname.git (push)
+Note: morning-depths-90039 is just a random name that heroku gave to your app. You can rename it later. 
 ```
 git push heroku master
 ```
@@ -100,12 +108,12 @@ To push the files to heroku.
 heroku open
 ```
 This command will open the app in a new window on your browser. 
-If you can view the site, your lucky!
-Often, heroku will display error in the browser and then you have to use following command to see the logs, follow the logs to solve any issues.
+If you can view the site, you are lucky!
+Often, heroku will display errors in the browser and then you have to use following command to see the logs, follow the logs to solve any issues.
 ```
 heroku logs
 ```
-You will probably notice that url that heroku gave you is very random and you would probably want to change the url. Please use the below command to achieve that.
+You will probably notice that the URL given by heroku is very random and you would probably want to change it. Please use the below command to achieve that.
 ```
 heroku apps:rename newname --app oldname
 ```
