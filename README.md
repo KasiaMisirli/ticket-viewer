@@ -95,10 +95,12 @@ git remote -v
 ```
 Above command is not necessary, but it's useful to see if the heroku app is inside your github repository.
 You should be able to see something like below:
+```
 heroku    https://git.heroku.com/morning-depths-90039.git (fetch)
 heroku    https://git.heroku.com/morning-depths-90039.git (push)
 origin    https://github.com/yourgithubname/yourgithubrepositoryname.git (fetch)
 origin    https://github.com/yourgithubname/yourgithubrepositoryname.git (push)
+```
 Note: morning-depths-90039 is just a random name that heroku gave to your app. You can rename it later. 
 ```
 git push heroku master
